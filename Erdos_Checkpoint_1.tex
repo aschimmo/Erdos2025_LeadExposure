@@ -1,0 +1,68 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand{\Alex}[1]{{\textcolor{Purple}{\bfseries{[#1]}}}}
+\newcommand{\Katherine}[1]{{\textcolor{ForestGreen}{\bfseries{[#1]}}}}
+\newcommand{\Brock}[1]{{\textcolor{red}{\bfseries{[#1]}}}}
+
+\title{Lead Exposure Project: Checkpoint 1}
+\author{Katherine Laliotis, Alex Schimmoller, Brock Grafstrom}
+
+\begin{document}
+\maketitle
+
+\section{Datasets}
+
+For this project, we will primarily use two datasets.
+
+First, the \href{https://experience.arcgis.com/experience/1ddfc9ee51ae4eddbdf8003c81eef7e4/}{Water System Service Line Inventory} from the City of Columbus contains information about the type of water line used in homes. For the  homes and buildings included in this dataset, the data includes the type of material used in the line, and a lead-Non-lead classification. 
+
+Second, we will use data from the \href{https://property.franklincountyauditor.com/_web/maps/mapadv.aspx}{Franklin County Auditor's Office} on home ages in the area. The auditor's office data base contains addresses, homeowner names, tax and sale information, year built, area, and rooms and bathrooms. We propose to start by using year built for houses, but we are interested in using locations or school district designations to compare homes in different neighborhoods as well.
+
+\section{Problem}
+
+
+Lead can damage nearly every system in the human body, and has harmful effects on both adults and children. It is a serious environmental public health threat to people across the United States, including those living in Central Ohio. Oftentimes, lead exposure takes place within one’s own home through ingestion of water carried through lead piping. In an effort to raise awareness of citizens’ possible exposure to lead, the City of Columbus makes publicly available a Service Line Material Inventory detailing the type of line used for each home. However, this data is oftentimes self reported, and there exist many homes not registered with the inventory. In this project, we will use the inventory and data on homes available through the Franklin County Auditor’s Website to train a model to determine a home’s probability of containing lead piping. This model could then be used to assign unregistered homes with a relative risk of containing lead pipe. 
+
+\section{Project Stakeholders}
+
+The following list includes potential stakeholders who might benefit from the results of this project: 
+\begin{itemize}
+    \item Columbus, Ohio residents, in particular those whose homes are not reported in the \href{https://experience.arcgis.com/experience/1ddfc9ee51ae4eddbdf8003c81eef7e4/}{Water System Service Line Inventory} 
+    \item 
+    %City \Katherine{Is there like a City Repairs people that have to upgrade things sometimes??}
+    The City of Columbus, whose current initiatives include the \href{https://www.columbus.gov/Services/Public-Health/Environmental-Health/Lead-Education-and-Poisoning-Prevention}{Lead Education and Poisoning Prevention Program} and the \href{https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information}{Lead Service Line Replacement Program}.
+    
+\end{itemize}
+
+\section{Key Performance Indicators}
+
+% \Katherine{(copied from Stephen on Slack: By KPI (Key Performance Indicator) we just mean: what metrics will you use to explain the value of your project to stakeholders? To demonstrate that your model is useful you should showcase how it could be used in a trading strategy to make good returns through backtesting.}
+
+Key performance indicators (KPIs) we will use for this project include:
+
+\begin{enumerate}
+    \item Accuracy of the model in predicting homes that we know do contain lead using cross-validation and forward selection
+    
+    \item Assuming the model proves to be accurate, results of this project could be used by the City of Columbus to create a list of all homes with the highest risk of lead exposure from water service lines and motivate the highest priority projects within the \href{https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information}{Lead Service Line Replacement Program}. As \href{https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water#:~:text=EPA%20and%20the%20Centers%20for,to%20health%2C%20especially%20for%20children.&text=Can%20I%20shower%20in%20lead%2Dcontaminated%20water%3F}{there is no known ``safe" blood lead level above zero}, successful implementation of this program can lead to the minimization of lead poisoning cases in Central Ohio.  
+    
+    \item Knowledge of the number of homes whose pipes need to be replaced would also help the City of Columbus to design an accurate and cost-effective plan to meet the \href{https://www.epa.gov/newsreleases/biden-harris-administration-issues-final-rule-requiring-replacement-lead-pipes-within}{EPA's deadline} of 10 years to replace lead pipes. Developing a plan and a cost estimate takes time, and throughout that time inflation and increasing materials costs would cause the replacement to only get more expensive for the city as time goes on. Using our findings, the city could minimize the impact of inflation on the pipe replacement project. 
+
+\end{enumerate}
+
+
+\end{document}
