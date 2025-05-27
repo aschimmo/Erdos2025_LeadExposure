@@ -1,0 +1,9 @@
+Full Service Line Inventory with street addresses, latitude and longitude data, as well as the pipe classification.
+
+Key:
+PB = Lead
+CU = Copper (non-lead)
+OT = Other (non-lead)
+PL = Plastic (non-lead)
+MU = Material Unknown
+GAL = Galvanized Requiring Replacement
