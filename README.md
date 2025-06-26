@@ -8,7 +8,7 @@
 - [Preprocessing and Exploratory Analysis](#preprocessing-and-exploratory-analysis)
 - [Model Selection](#model-selection)
 - [Results](#results)
-- [FilesSoftware Requirements](#files)
+- [Files](#files)
 - [Software Requirements](#software-requirements)
 ## Introduction
 
@@ -25,4 +25,7 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 
 ## Results
 
-## Files and Software Requirements
+## Files 
+
+## Software Requirements
+All of the files listed above ultilize 'python'
