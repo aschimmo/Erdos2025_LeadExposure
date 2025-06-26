@@ -13,7 +13,12 @@
 ## Introduction
 
 ## Dataset Creation
-In order to demarcate the geographical regions of homes in Columbus, we used the city's [offical planning area boundaries](https://opendata.columbus.gov/datasets/00b5b47799d546efb13eddee7dad52b5_16/explore).
+
+The city of Columbus has a [Service Line Material Inventory](https://experience.arcgis.com/experience/1ddfc9ee51ae4eddbdf8003c81eef7e4/) which describes the construction material of pipes which provide water to individual buildings. It contains data on roughly 288,000 properties, and yet there are still ~ 250,000 properties unaccounted for. 
+
+Detailed home information (e.g. Build year, property value, etc.) was provided by the [Franklin Country Auditor's Office](https://www.franklincountyauditor.com/home).
+
+In order to demarcate the geographical regions of the Columbus metro area, we used the city's [offical planning area boundaries](https://opendata.columbus.gov/datasets/00b5b47799d546efb13eddee7dad52b5_16/explore). By using the 
 ## Preprocessing and Exploratory Analysis
 
 ## Model Selection
