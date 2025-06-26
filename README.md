@@ -3,12 +3,12 @@
 ### Team Members: [Katherine Laliotis](https://github.com/kklaliotis), [Alex Schimmoller](https://github.com/aschimmo), and [Brock Grafstrom](https://github.com/brockgrafstrom)
 
 ## Table of Contents
-■ [Introduction](#introduction)
-■ [Dataset Creation](#dataset-creation)
-■ [Preprocessing and Exploratory Analysis](#preprocessing-and-exploratory-analysis)
-■ [Model Selection](#model-selection)
-■ [Results](#results)
-■ [Files](#files)
+■ [Introduction](#introduction)\
+■ [Dataset Creation](#dataset-creation)\
+■ [Preprocessing and Exploratory Analysis](#preprocessing-and-exploratory-analysis)\
+■ [Model Selection](#model-selection)\
+■ [Results](#results)\
+■ [Files](#files)\
 ■ [Software Requirements](#software-requirements)
 ## Introduction
 
