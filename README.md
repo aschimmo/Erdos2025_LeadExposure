@@ -30,7 +30,7 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Software Requirements
 All of the above files listed ultilize python (version 3.12.10) and the following packages...
 
-<ins>Basic Data Manipulation</ins>$~~~~~~$<ins>Geospatial Data Manipulation</ins>$~~~~~~$<ins>Plotting</ins>$~~~~~~$<ins>Model Training</ins>
+<ins>Basic Data Manipulation</ins>$~~~~~~$<ins>Geospatial Data Manipulation</ins>$~~~~~~$<ins>Plotting (Static \& Interactive)</ins>$~~~~~~$<ins>Model Training</ins>
 1. `numpy`     $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$    3. `geopandas` $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ 5. `plotly.express`  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ 10. `sklearn`
 2. `pandas`     $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$     4. `pillow` $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ 6. `plotly.graph_objects`
 $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ 7. `matplotlib.pyplot`
