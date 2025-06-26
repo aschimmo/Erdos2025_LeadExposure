@@ -13,7 +13,7 @@
 ## Introduction
 
 ## Dataset Creation
-
+In order to demarcate the geographical regions of homes in Columbus, we used the city's [offical planning area boundaries](https://opendata.columbus.gov/datasets/00b5b47799d546efb13eddee7dad52b5_16/explore).
 ## Preprocessing and Exploratory Analysis
 
 ## Model Selection
