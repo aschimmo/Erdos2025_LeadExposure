@@ -26,7 +26,7 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Results
 
 ## Files 
-[df_cleaned.csv](df_cleaned.csv)
+- `[df_cleaned.csv](df_cleaned.csv)`
 
 ## Software Requirements
 All of the above files ultilize python (version 3.12.10) and the following packages...
