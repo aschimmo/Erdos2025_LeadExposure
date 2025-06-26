@@ -28,4 +28,4 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Files 
 
 ## Software Requirements
-All of the files listed above ultilize python \(version 3.12.10\) 
+All of the files listed above ultilize python (version 3.12.10) 
