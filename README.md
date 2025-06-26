@@ -31,12 +31,10 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 All of the above files listed ultilize python (version 3.12.10) and the following packages...
 
 <ins>Basic Data Manipulation</ins>$~~~~~~$<ins>Geospatial Data Manipulation</ins>
-1. `numpy`      $~~~~~~~~~~~~~~~~~~~~~$    3. `geopandas`
-2. `pandas`     $~~~~~~~~~~~~~~~~~~~$     4. `pillow`
+1. `numpy`      $~~~~~~~~~~~~~~~~~~~~~~~~~~~$    3. `geopandas`
+2. `pandas`     $~~~~~~~~~~~~~~~~~~~~~~~~~$     4. `pillow`
 
-<ins>Geospatial Data Manipulation</ins>
-3. `geopandas`
-4. `pillow`
+
 
 <ins>Plotting</ins>
 5. `plotly.express`
