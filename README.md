@@ -1,5 +1,4 @@
-# Does your Home Contain Lead?\
-## Predicting Lead Pipe Exposure for Homes in Columbus, OH 
+# Does your Home Contain Lead?\Predicting Lead Pipe Exposure for Homes in Columbus, OH 
 
 ### Team Members: [Katherine Laliotis](https://github.com/kklaliotis), [Alex Schimmoller](https://github.com/aschimmo), and [Brock Grafstrom](https://github.com/brockgrafstrom)
 
