@@ -4,12 +4,12 @@
 
 ## Table of Contents
 ■ [Introduction](#introduction)
-- [Dataset Creation](#dataset-creation)
-- [Preprocessing and Exploratory Analysis](#preprocessing-and-exploratory-analysis)
-- [Model Selection](#model-selection)
-- [Results](#results)
-- [Files](#files)
-- [Software Requirements](#software-requirements)
+■ [Dataset Creation](#dataset-creation)
+■ [Preprocessing and Exploratory Analysis](#preprocessing-and-exploratory-analysis)
+■ [Model Selection](#model-selection)
+■ [Results](#results)
+■ [Files](#files)
+■ [Software Requirements](#software-requirements)
 ## Introduction
 
 ## Dataset Creation
@@ -26,7 +26,7 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Results
 
 ## Files 
-`■` [`df_cleaned.csv`](df_cleaned.csv)
+- [`df_cleaned.csv`](df_cleaned.csv)
 
 ## Software Requirements
 All of the above files ultilize python (version 3.12.10) and the following packages...
