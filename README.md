@@ -38,8 +38,8 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ### Python Scripts
 ◦ [`preliminary_analysis.py`](preliminary_analysis.py)
 ### CSV
-◦ [`ServiceLineInventory`](ServiceLineInventory.csv) Raw service line inventory data and [`ServiceLineKey`](ServiceLineKey.txt)\
-◦ [`data_match_near`](data_match_near.csv) Connecting the Service Line Inventory to the Franklin County Auditor's Data\
+◦ [`ServiceLineInventory.csv`](ServiceLineInventory.csv) Raw service line inventory data and [`ServiceLineKey.txt`](ServiceLineKey.txt)\
+◦ [`data_match_near.csv`](data_match_near.csv) Connecting the Service Line Inventory to the Franklin County Auditor's Data\
 ◦ [`df_cleaned.csv`](df_cleaned.csv) Final dataset used for training and testing
 
 ## Software Requirements
