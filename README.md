@@ -26,6 +26,12 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Results
 
 ## Files 
+
+### Notebooks
+
+### Python Scripts
+
+### CSV
 ◦ [`df_cleaned.csv`](df_cleaned.csv)\
 ◦\
 ◦\
