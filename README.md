@@ -28,14 +28,19 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Files 
 
 ### Notebooks
-
+◦ [`data_cleaning.ipynb`](data_cleaning.ipynb)\
+◦ [`JoiningData.ipynb`](JoiningData.ipynb)\
+◦ [`preliminary_analysis.ipynb`](preliminary_analysis.ipynb)\
+◦ [`LogisticRegression.ipynb`](LogisticRegression.ipynb)\
+◦ [`Neighbors_Trees.ipynb`](Neighbors_Trees.ipynb)\
+◦ [`Columbus_CommunityPLanningDistricts.ipynb`](Columbus_CommunityPLanningDistricts.ipynb)\
+◦ [`Plotly_Chloropleth.ipynb`](Plotly_Chloropleth.ipynb)
 ### Python Scripts
-
+◦ [`preliminary_analysis.py`](preliminary_analysis.py)
 ### CSV
-◦ [`df_cleaned.csv`](df_cleaned.csv)\
-◦\
-◦\
-◦
+◦ [`ServiceLineInventory`](ServiceLineInventory.csv) Raw service line inventory data and [`ServiceLineKey`](ServiceLineKey.txt)\
+◦ [`data_match_near`](data_match_near.csv) Connecting the Service Line Inventory to the Franklin County Auditor's Data\
+◦ [`df_cleaned.csv`](df_cleaned.csv) Final dataset used for training and testing
 
 ## Software Requirements
 All of the above files ultilize python (version 3.12.10) and the following packages...
