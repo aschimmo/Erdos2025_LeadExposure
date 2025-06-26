@@ -4,7 +4,7 @@
 [Katherine Laliotis](https://github.com/kklaliotis)
 [Alex Schimmoller](https://github.com/aschimmo)
 [Brock Grafstrom](https://github.com/brockgrafstrom)
-\\
+
 ## Table of Contents
 %[Introduction]
 %[Dataset Creation]
