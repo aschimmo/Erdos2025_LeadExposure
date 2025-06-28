@@ -21,9 +21,7 @@ The city of Columbus has a [Service Line Material Inventory](https://experience.
 In order to demarcate the geographical regions of the Columbus metro area, we used the city's [offical planning area boundaries](https://opendata.columbus.gov/datasets/00b5b47799d546efb13eddee7dad52b5_16/explore) which consists of 27 "neighborhoods". The python package `geopandas` was used to assign each property in `df_cleaned.csv` to a neighborhood region within the greater Columbus area. This enabled us to calculate statistics for not only the entire city, but distinct spatial regions as well.
 
 ## Preprocessing and Exploratory Analysis
-
-Roughly 10% of homes in the service line inventory are serviced by lead or galvinized steel pipes (which lead particles can stick to). This 
-Timeseries analysis: 
+Roughly 10% of homes in the service line inventory are serviced by lead or galvinized steel pipes (which lead particles can stick to). One consequence of this fact, is that the (20%) training and (80%) testing data is very unbalanced, which if left unchecked can lead to errors with subsequent modeling steps. These errors are largely caused by the fact that our model might accidentally be trained (or tested) on virtually all non-lead data points during the random sampling step. For all the models being considered in this project, we rectified the problem of unbalanced data by performing *Stratified* K-Fold Cross-Validation. This method works by requiring that 10% percent of the randomly sampled data points are buildings that test positive for lead, which migigates the issue of oversampling non-lead data points.
 
 ## Model Selection
 
