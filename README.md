@@ -23,27 +23,36 @@ In order to demarcate the geographical regions of the Columbus metro area, we us
 ## Preprocessing and Exploratory Analysis
 Roughly 10% of homes in the service line inventory are serviced by lead or galvinized steel pipes (which lead particles can stick to). One consequence of this fact, is that the (20%) training and (80%) testing data is very unbalanced, which if left unchecked can lead to errors with subsequent modeling steps. These errors are largely caused by the fact that our model might accidentally be trained (or tested) on virtually all non-lead data points during random sampling. For all the models being considered in this project, we rectified the problem of unbalanced data by performing *Stratified* K-Fold Cross-Validation. This method works by requiring that 10% percent of the randomly sampled data points are buildings which test positive for lead, thereby migigating the issue of oversampling non-lead data points.
 
+As a starting point, we calculated a time series of all the homes built in Columbus between 1803 - 2024 (*note that home build years only became offically reliable after 1920). We did this because we expected a strong correlation between construction year and the prevalence of lead pipes. We also researched historical state records where we found that Copper overtook lead in 1930 as the choice material for water pipes, as well as an Ohio [law](https://codes.ohio.gov/ohio-administrative-code/rule-3745-81-84) banning the use of lead pipes for new construction projects starting in 1963. This rule also included a two year grace point for compliance. Likewise, similar rules were enacted by the Environmental Protection Agency in in 1986 and [1991](https://www.epa.gov/dwreginfo/lead-and-copper-rule) which placed minimum lead level standards across the country. These rules gave the impression that 1930, 1963-1965, and 1991 would be key inflection years.
+
+Our preliminary results verified this hypothesis, as homes constructed between 1900-1950 were found to have 50% chance of containing lead pipes if picked by random, while homes between 1960-1990 where found to have virtually no chance of having lead pipes when randomly selected.
+
 ## Model Selection
 
-\item Time series analysis of build year and lead pipes followed by logistic regression: Our data contains homes that were constructed in every year between 2024 and the late-1800s. Preliminary analysis indicates that homes constructed between 1900-1950 have the greatest likelihood of containing lead, with a drastic decrease after 1950. Cross-referencing with Ohio and federal EPA statues we note the following key years...
-        \begin{itemize}
-            \item 1930s - Copper pipes overtake lead for new construction projects.
-            \item 1963 - Ohio passes \href{https://codes.ohio.gov/ohio-administrative-code/rule-3745-81-84}{Administrative Rule 3745-81-84} banning lead for use in the construction.
-            \item 1965 - Last year Ohio law allows new construction projects to use lead. 
-            \item 1986 - EPA bans lead pipes for use in new construction.
-            \item 1991 - EPA enacts \href{https://www.epa.gov/dwreginfo/lead-and-copper-rule}{Lead \& Copper Rule} which requires the removal and replacement of lead lines regardless of build year. Also set stricter water monitoring regulations (drinking water must have less than 15ppb of lead)
-            \item 1996 - The city of Columbus starts removing lead service lines.
-            \item 2024 - EPA passes final revision of Lead and Copper Rule which mandates that all lead service lines in the US must be replaced by 2034.
-            \item 2025 - Ohio state legislature proposes \href{https://greatlakes.org/2025/05/environmental-organizations-celebrate-bipartisan-bill-to-remove-ohios-lead-service-lines-to-improve-drinking-water/}{Lead Line Replacement Act} which mandates that all lead service lines must be replaced within 15 years.
-        \end{itemize}
-    
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html}{Stratified K-fold Cross Validation}: Allows us to partition the majority and minority data sets in a balanced fashion. For example, we randomly sample 225,000 homes to create an 80:20 training testing split, we would naively expect 10\% of those homes to have lead pipes in both the training \emph{and} testing data sets. However, through random chance, some folds may overestimate or underestimate the number of homes that contain lead. To ensure this does not happen, we will create a constrained training set of 179,200 homes (80\% of the total homes) with the following breakdown...
+Time series: Simple and easily interpretable model, which can be used to verify the correlation between build year and likelihood of lead. Assumes a direct correlation and likely does not capture the full picture behind the numerous driving factors for predicting lead likelihood.
 
-Stratified K-fold Cross-Validation:
+Stratified K-fold Cross Validation: Allows us to partition the majority and minority data sets in a controlled fashion, such that our results are comparable to different folds of traing and testing. For example, we randomly sampled 225,000 homes to create an 80:20 training testing split, we would naively expect 10\% of those homes to have lead pipes in both the training \emph{and} testing data sets. However, through random chance, some folds may overestimate or underestimate the number of homes that contain lead. To ensure this does not happen, we created a constrained training set of 179,200 homes (80\% of the total homes) where 10% of that 179,200 homes training set was garunteed to be lead positive homes. Unique addresses are shuffled randomly fold-to-fold, but the overall ratios remain fixed.
+
+Logistic Regression: Simplest regression model, where we only consider the build year and number of postive lead nearest neighbors. Because our dataset consits of ~224,000 unique data points, it is impossible (from a computational standpoint) to calculate all nearest-neighbors, so instead we derived an "effective radius/correlation length" that weights the contribution of a given postive-lead home's influence on the prediction of the predicted address. In other words, the closer the neighbors, the larger the influence those neighbors will have on overall the prediction.
+
+KNN: A strictly nearest neighbor regression method, which isolates the contribution of knowledge about the overall neighborhood. Has the benefit of being easy to interpret and provides a nice way of analizing the spatial regions where nearest neighbors struggles to accuractely predict lead pipes within the city.
 
 Tree algorithm: Can be used to aid in pipe material classification, and also allows us to assign different weights for classification. Hyperparameter optimization of these classification weights might aid in mitigating systematic biases in our data.
 
 ## Results
+See a strong correlation between build year and likelihood of lead. Useful for extending the service line inventory's scope, but not necessarily the most accurate (see metrics).
+
+Logistic regression works better than random guessing after hyperparameters have been optimized. Over a 50% increase in accuracy over the random guessing case. Interpretibilty is challenging however.
+
+KNN (nearest-neighbor) works well, but the prevalance of newer homes in traditionally older neighborhoods contaminates the model's ability to accurately predict true negatives in regions where there is a high number of lead-postive homes.
+
+# Extensions for Future Work
+While all our models drastically improve upon the simplest case of random guessing, they struggle with lead prediction in regions where there is little to no training data. One focus for the city would be to prioritize reporting in those regions, so the model's could be properly trained over a wider range of geographical neighborhoods. This would liekly help the KNN model the most, as logistic regression seems to be more robust due to the fact that it also considers correlations with build year. 
+
+Our models only focused on the two primary influences for lead prediction, however other influences/correlations such as home appraisal price, or grade rating would likely refine the accuracy and precision of the above models throughout the entire Columbus region. 
+
+Another interesting extension would be to transfer the model's prediction to newer cities that have a narrower range of build years, or to predict average student test scores for statewide assements.
+
 
 ## Files 
 
