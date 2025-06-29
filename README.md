@@ -62,12 +62,12 @@ Another interesting extension would be to transfer the model's prediction to new
 ◦ [`preliminary_analysis.ipynb`](preliminary_analysis.ipynb)\
 ◦ [`LogisticRegression.ipynb`](LogisticRegression.ipynb)\
 ◦ [`Neighbors_Trees.ipynb`](Neighbors_Trees.ipynb)\
-◦ [KNN_Analysis.ipynb](KNN_Analysis.ipynb)\
+◦ [`KNN_Analysis.ipynb`](KNN_Analysis.ipynb)\
 ◦ [`Columbus_CommunityPLanningDistricts.ipynb`](Columbus_CommunityPLanningDistricts.ipynb)\
 ◦ [`Plotly_Chloropleth.ipynb`](Plotly_Chloropleth.ipynb)
 ### Python Scripts
-◦ [`preliminary_analysis.py`](preliminary_analysis.py)
-◦ [`Plotly_Chloropleth.py`](Plotly_Chloropleth.py)
+◦ [`preliminary_analysis.py`](preliminary_analysis.py)\
+◦ [`KNN_Analysis.py`](KNN_Analysis.py)
 ### CSV
 ◦ [`ServiceLineInventory.csv`](ServiceLineInventory.csv) Raw service line inventory data and [`ServiceLineKey.txt`](ServiceLineKey.txt)\
 ◦ [`data_match_near.csv`](data_match_near.csv) Connecting the Service Line Inventory to the Franklin County Auditor's Data\
