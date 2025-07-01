@@ -62,7 +62,7 @@ Another interesting extension would be to transfer the model's prediction to new
 ◦ [`preliminary_analysis.ipynb`](preliminary_analysis.ipynb)\
 ◦ [`LogisticRegression.ipynb`](LogisticRegression.ipynb)\
 ◦ [`KNN_Analysis.ipynb`](KNN_Analysis.ipynb)\
-◦ [`Columbus_CommunityPLanningDistricts.ipynb`](Columbus_CommunityPLanningDistricts.ipynb)\
+◦ [`Columbus_CommunityPLanningDistricts.ipynb`](Columbus_CommunityPlanningDistricts.ipynb)\
 ◦ [`Plotly_Chloropleth.ipynb`](Plotly_Chloropleth.ipynb)
 ### Python Scripts
 ◦ [`preliminary_analysis.py`](preliminary_analysis.py)\
