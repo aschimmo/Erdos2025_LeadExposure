@@ -61,7 +61,6 @@ Another interesting extension would be to transfer the model's prediction to new
 ◦ [`JoiningData.ipynb`](JoiningData.ipynb)\
 ◦ [`preliminary_analysis.ipynb`](preliminary_analysis.ipynb)\
 ◦ [`LogisticRegression.ipynb`](LogisticRegression.ipynb)\
-◦ [`Neighbors_Trees.ipynb`](Neighbors_Trees.ipynb)\
 ◦ [`KNN_Analysis.ipynb`](KNN_Analysis.ipynb)\
 ◦ [`Columbus_CommunityPLanningDistricts.ipynb`](Columbus_CommunityPLanningDistricts.ipynb)\
 ◦ [`Plotly_Chloropleth.ipynb`](Plotly_Chloropleth.ipynb)
