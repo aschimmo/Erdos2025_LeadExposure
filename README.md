@@ -39,8 +39,6 @@ Logistic Regression: Simplest regression model, where we only consider the build
 
 KNN: A strictly nearest neighbor regression method, which isolates the contribution of knowledge about the overall neighborhood. Has the benefit of being easy to interpret and provides a nice way of analizing the spatial regions where nearest neighbors struggles to accuractely predict lead pipes within the city.
 
-Tree algorithm: Can be used to aid in pipe material classification, and also allows us to assign different weights for classification. Hyperparameter optimization of these classification weights might aid in mitigating systematic biases in our data.
-
 ## Results
 See a strong correlation between build year and likelihood of lead. Useful for extending the service line inventory's scope, but not necessarily the most accurate (see metrics).
 
