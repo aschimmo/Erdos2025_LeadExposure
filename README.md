@@ -69,7 +69,7 @@ Another interesting extension would be to transfer the model's prediction to new
 ◦ [`Plotly_Chloropleth.ipynb`](Plotly_Chloropleth.ipynb)
 ### Python Scripts
 ◦ [`preliminary_analysis.py`](preliminary_analysis.py)\
-◦ [`LogisticRegression`](LogisticRegression.py)
+◦ [`LogisticRegression`](LogisticRegression.py)\
 ◦ [`KNN_Analysis.py`](KNN_Analysis.py)
 ### CSV
 ◦ [`ServiceLineInventory.csv`](ServiceLineInventory.csv) Raw service line inventory data and [`ServiceLineKey.txt`](ServiceLineKey.txt)\
